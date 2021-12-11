@@ -1,0 +1,109 @@
+<div class="container mt-5">
+  <div class="card text-center">
+      <div class="card-body">
+          <h5 class="card-title">Lista de Empleados</h5>
+          <hr>
+          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+              data-bs-target="#createGuitar">Nombre del empleado</button>
+          <div class="d-flex flex-wrap justify-content-evenly mt-5">
+            <!--<div class="card border-info mb-3" style="max-width: 18rem;" *ngFor="let empleados of allEmpleados">siguiente linea-->
+              <div class="card border-info mb-3" style="max-width: 18rem;">
+                <!--<div class="card-header">{{data.empleado + " - " + data.tarea}}</div> siguiente linea-->
+                <div class="card-header"></div>
+                  <div class="card-body">
+                      <h5 class="card-title">Primera tarea</h5>
+                      <!--<p class="card-text">{{"Nombre: " + nombre.empleado}}</p> siguiente linea-->
+                      <p class="card-text">"Nombre: "</p>
+                      <!--<p class="card-text">{{"Fecha: " + fechai.empleado}}</p> siguiente linea-->
+                      <p class="card-text">"Fecha: "</p>
+                      <!--<p class="card-text">{{"Fecha de la tarea: " + fechat.empleado}}</p>siguiente linea-->
+                      <p class="card-text">"Fecha de la tarea: "</p>
+                      <!--<p class="card-text">{{"Comentario: " + coment.empleado}}</p> siguiente linea-->
+                      <p class="card-text">"Comentario: "</p>
+                      <!--<p class="card-text">{{"Tiempo usado: " + tiempo.empleado}}</p>siguiente linea-->
+                      <p class="card-text">"Tiempo usado: "</p>
+                  </div>
+                  <div class="card-header"></div>
+                  <div class="card-body">
+                      <h5 class="card-title">Segunda tarea</h5>
+                      <!--<p class="card-text">{{"Nombre: " + nombre.empleado}}</p> siguiente linea-->
+                      <p class="card-text">"Nombre: "</p>
+                      <!--<p class="card-text">{{"Fecha: " + fechai.empleado}}</p> siguiente linea-->
+                      <p class="card-text">"Fecha: "</p>
+                      <!--<p class="card-text">{{"Fecha de la tarea: " + fechat.empleado}}</p>siguiente linea-->
+                      <p class="card-text">"Fecha de la tarea: "</p>
+                      <!--<p class="card-text">{{"Comentario: " + coment.empleado}}</p> siguiente linea-->
+                      <p class="card-text">"Comentario: "</p>
+                      <!--<p class="card-text">{{"Tiempo usado: " + tiempo.empleado}}</p>siguiente linea-->
+                      <p class="card-text">"Tiempo usado: "</p>
+                  </div>
+                  <div class="card-header"></div>
+                  <div class="card-body">
+                      <h5 class="card-title">Tercera tarea</h5>
+                      <!--<p class="card-text">{{"Nombre: " + nombre.empleado}}</p> siguiente linea-->
+                      <p class="card-text">"Nombre: "</p>
+                      <!--<p class="card-text">{{"Fecha: " + fechai.empleado}}</p> siguiente linea-->
+                      <p class="card-text">"Fecha: "</p>
+                      <!--<p class="card-text">{{"Fecha de la tarea: " + fechat.empleado}}</p>siguiente linea-->
+                      <p class="card-text">"Fecha de la tarea: "</p>
+                      <!--<p class="card-text">{{"Comentario: " + coment.empleado}}</p> siguiente linea-->
+                      <p class="card-text">"Comentario: "</p>
+                      <!--<p class="card-text">{{"Tiempo usado: " + tiempo.empleado}}</p>siguiente linea-->
+                      <p class="card-text">"Tiempo usado: "</p>
+                  </div>
+                  <button>Eliminar</button>
+              </div>
+          </div>
+          <a class="btn btn-outline-primary" routerLink="">Ir al Home</a>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="createEmpleado" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Agregar Empleado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="input-group mb-3">
+                <!--<select class="form-select" aria-label="Default select example" [(ngModel)]="nombre.empleado">siguiente linea-->
+                  <select class="form-select" aria-label="Default select example">
+                      <option selected>Seleccione la información</option>
+                      <!--<option [value]="type" *ngFor="let type of this.typePeople">{{type}}</option>siguiente linea-->
+                      <option></option>
+                  </select>
+              </div>
+              <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Fecha Inicial</span>
+                  <!--<input [(ngModel)]="fechai.empleado" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>-->
+                  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
+              </div>
+              <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Fecha de la tarea</span>
+                  <!--<input [(ngModel)]="fechat.empleado" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>-->
+                  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
+              </div>
+              <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Comentario</span>
+                  <!--<input [(ngModel)]="coment.empleado" type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>-->
+                  <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
+              </div>
+              <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Tiempo usado</span>
+                  <!--<input [(ngModel)]="tiempo.empleado" type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>-->
+                  <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
+              </div>
+              <div id="alerta"></div>
+          </div>
+          <div class="modal-footer">
+              <button id="closeModal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <!--<button type="button" class="btn btn-primary" (click)="saveGuitar()">Guardar</button>-->
+              <button type="button" class="btn btn-primary">Guardar</button>
+          </div>
+      </div>
+  </div>
+</div>

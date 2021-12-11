@@ -1,0 +1,24 @@
+<div class="formatoPestania">
+<form class="centrado formularioLogin">
+  <div class="container mt-5">
+    <div class="card" style="background-color: #b4b6b8;">
+        <legend>LOGIN</legend>
+        <div class="card-body">
+        <!--se borro "(submit)="login()" de form-->
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email*:</label>
+                    <input type="email" class="form-control centrado" id="exampleInputEmail1" placeholder="Correo electrónico" aria-describedby="emailHelp" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña*:</label>
+                    <!--se borro [(ngModel)]="datosLogin.pass" input [(ngModel)]="datosLogin.email" correo y contraseña -->
+                    <input type="password" class="form-control centrado" id="exampleInputPassword1" placeholder="Contraseña" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>Ingresar </button>
+            </form>
+        </div>
+  </div>
+  </div>
+</form>
+</div>
