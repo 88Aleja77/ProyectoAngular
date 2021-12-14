@@ -1,24 +1,32 @@
 <div class="formatoPestania">
+  <h1 class="fuente">AngularPets</h1>
 <form class="centrado formularioLogin">
   <div class="container mt-5">
-    <div class="card" style="background-color: #b4b6b8;">
-        <legend>LOGIN</legend>
+    <div class="card" style="background-color: #d3cdaa;">
+        <legend>INICIAR SESIÓN</legend>
         <div class="card-body">
         <!--se borro "(submit)="login()" de form-->
             <form>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email*:</label>
+                    <label for="exampleInputEmail1" class="form-label">Correo*:</label>
+                    <div class="icons">
+                    <i class="material-icons pderecha">account_circle</i>
                     <input type="email" class="form-control centrado" id="exampleInputEmail1" placeholder="Correo electrónico" aria-describedby="emailHelp" name="email">
+                  </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña*:</label>
+                    <label for="exampleInputPassword1" class="form-label" >Contraseña*:</label>
                     <!--se borro [(ngModel)]="datosLogin.pass" input [(ngModel)]="datosLogin.email" correo y contraseña -->
+                    <div class="icons">
+                    <i class="material-icons">vpn_key</i>
                     <input type="password" class="form-control centrado" id="exampleInputPassword1" placeholder="Contraseña" name="password">
                 </div>
-                <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>Ingresar </button>
+              </div>
+                <button type="submit" class="btn btn-warning"><i class="fas fa-sign-in-alt"></i>Ingresar </button>
             </form>
         </div>
-  </div>
+    </div>
   </div>
 </form>
 </div>
+

@@ -9,3 +9,9 @@ export interface AqiFromThirdPartyService{
     time: object,
     uid: number
 }
+export interface Gerente{
+  nombre: String,
+  puesto: String,
+  correo: String,
+  pass: String
+}

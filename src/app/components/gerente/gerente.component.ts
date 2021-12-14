@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-gerente',
   templateUrl: './gerente.component.html',
@@ -7,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GerenteComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
   }

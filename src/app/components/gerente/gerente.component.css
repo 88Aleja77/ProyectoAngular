@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Birthstone+Bounce:wght@500&family=Fleur+De+Leah&family=Satisfy&display=swap');
+
+.fuente{
+  font-family:'Aclonica', sans-serif;
+  text-align: center;
+  font-size: 60px;
+  padding: 35px;
+  margin: 15px;
+
+}
+
+.imagenfondo{
+  margin: 0%;
+  width: 100%;
+  background:fixed;
+  background: no-repeat;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/5256716/pexels-photo-5256716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+}
+  .card{
+  width: 100%;
+  max-width: 600px;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 99;
+  opacity: .85;
+}
+button{
+  width: 60%;
+  margin: 5px 0 25px;
+}
+
+i{
+  margin: 10px;
+}
